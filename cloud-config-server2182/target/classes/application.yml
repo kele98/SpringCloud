@@ -1,0 +1,31 @@
+server:
+  port: 2182
+spring:
+  application:
+    name: cloud-config-servers
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kele98/Spring-Config.git
+  #设置rabbitmq参数
+  rabbitmq:
+    host: a.aikele.top
+    port: 5672
+    username: rabbit
+    password: rabbit
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka,http://127.0.0.2:7002/eureka
+  instance:
+    instance-id: cloud-config-servers
+
+#服务端设置暴露刷新端口
+management:  #配置了以后该服务可以接受手动刷新指令
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

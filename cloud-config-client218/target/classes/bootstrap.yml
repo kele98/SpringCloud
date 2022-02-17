@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    config:
+      name: application #仓库中的文件
+      profile: dev #仓库中的文件
+      discovery:
+        enabled: true #开启服务发现
+        service-id: cloud-config-servers #注册进Eureka的服务名
+  rabbitmq:
+    host: a.aikele.top
+    port: 5672
+    username: rabbit
+    password: rabbit
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka,http://127.0.0.2:7002/eureka
+management: #配置了以后 该服务可以接受 手动刷新指令
+  endpoints:
+    web:
+      exposure:
+        include: refresh
