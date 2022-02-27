@@ -11,10 +11,15 @@
         <module name="cloud-config-client218" />
         <module name="cloud-api-commons" />
         <module name="cloud-provider-payment8001" />
+        <module name="cloud-config-cilent218" />
+        <module name="cloud-config-Servlet2182" />
         <module name="cloud-consumer-feign-hystrix-order80" />
         <module name="cloud-sleuth" />
         <module name="cloud-provider-hystrix-payment9001-dashboard" />
+        <module name="cloudalibaba-provider-payment9002" />
+        <module name="cloudalibaba-provider-payment9001" />
         <module name="cloud-gateway-gateway9527" />
+        <module name="cloudalibaba-consumer-nacos-order83" />
         <module name="cloud-provider-hystrix-payment8001-dashboard" />
         <module name="cloud-euraka-server7002" />
         <module name="cloud-euraka-server7001" />
@@ -25,7 +30,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cloud-provider-hystrix-payment9001-dashboard" target="1.8" />
       <module name="cloud-sleuth" target="1.8" />
       <module name="cloudproviderpayment8001" target="1.8" />
     </bytecodeTargetLevel>
