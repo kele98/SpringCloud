@@ -1,0 +1,11 @@
+
+spring:
+  application:
+    name: nacos-config #项目名以及nacos读取的配置名
+  cloud:
+    nacos:
+      config:
+        server-addr: a.aikele.top:1111
+        file-extension: yaml
+server:
+  port: 3377

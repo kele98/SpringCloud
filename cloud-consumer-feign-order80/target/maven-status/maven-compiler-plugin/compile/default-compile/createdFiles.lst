@@ -1,0 +1,4 @@
+com\aikele\springcloud\config\FeignConfig.class
+com\aikele\springcloud\service\PaymentFeignService.class
+com\aikele\springcloud\OpenFeignMain80.class
+com\aikele\springcloud\controller\OrderFeignController.class

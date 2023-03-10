@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="top.aikele.main.dao.OrderMapper">
+
+<!--    <resultMap id="Order" type="top.aikele.main.controller.entity.Order">-->
+<!--        <id column="id" property="id"></id>-->
+<!--        <result column="user_id" property="user_id"></result>-->
+<!--        <result column="stock_id" property="stock_id"></result>-->
+<!--        <result column="number" property="number"></result>-->
+<!--    </resultMap>-->
+    <insert id="insert" >
+        insert into order.order values (#{id},#{user_id},#{stock_id},#{number});
+    </insert>
+</mapper>

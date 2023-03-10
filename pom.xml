@@ -22,7 +22,16 @@
         <module>cloud-config-server2182</module>
         <module>cloud-config-client218</module>
         <module>cloudalibaba-provider-payment9001</module>
+        <module>cloudalibaba-provider-payment9002</module>
         <module>cloudalibaba-consumer-nacos-order83</module>
+        <module>cloudalibaba-config-nacos-client3377</module>
+        <module>cloudalibaba-sentinel-service8401</module>
+        <module>cloudalibaba-provider-payment9003</module>
+        <module>cloudalibaba-provider-payment9004</module>
+        <module>cloudalibaba-consumer-sentinel</module>
+        <module>seata-order-service2001</module>
+        <module>seata-stock-service2002</module>
+        <module>seata-user-service2003</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -59,11 +68,11 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.ailibaba</groupId>
-                <artifactId>druid</artifactId>
-                <version>${druid.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.ailibaba</groupId>-->
+<!--                <artifactId>druid</artifactId>-->
+<!--                <version>${druid.version}</version>-->
+<!--            </dependency>-->
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>

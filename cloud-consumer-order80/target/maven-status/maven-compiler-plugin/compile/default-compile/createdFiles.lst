@@ -1,0 +1,4 @@
+com\aikele\springcloud\controller\OrderController.class
+com\aikele\springcloud\OrderMain80.class
+com\aikele\config\RibbonRule.class
+com\aikele\springcloud\config\ApplicationConfig.class

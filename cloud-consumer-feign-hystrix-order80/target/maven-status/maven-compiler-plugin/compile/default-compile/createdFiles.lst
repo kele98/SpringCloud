@@ -1,0 +1,4 @@
+com\aikele\springcloud\service\PaymentHystrixService.class
+com\aikele\springcloud\controller\OrderHystrixController.class
+com\aikele\springcloud\service\PaymentFallbackService.class
+com\aikele\springcloud\OrderHystrixMain80.class

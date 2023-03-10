@@ -1,0 +1,3 @@
+com\aikele\springcloud\service\PaymentService.class
+com\aikele\springcloud\PaymentHystrixMain8001.class
+com\aikele\springcloud\controller\PaymentController.class

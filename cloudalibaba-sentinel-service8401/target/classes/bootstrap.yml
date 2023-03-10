@@ -1,0 +1,23 @@
+server:
+  port: 8401
+spring:
+  profiles:
+    active: dev
+  application:
+    name: sentinel-service
+  cloud:
+    nacos:
+      config:
+        server-addr: a.aikele.top:8848
+        file-extension: yaml
+      discovery:
+        server-addr: a.aikele.top:8848
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: a.aikele.top:8080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

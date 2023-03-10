@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: seata-stock
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: a.aikele.top:8848
+        group: SEATA_GROUP
+      config:
+        server-addr: a.aikele.top:8848
+        file-extension: yaml
+    sentinel:
+      transport:
+        port:
+        dashboard: a.aikele.top:8080
+  datasource:
+    username: kele
+    password: kele1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.3.41:3306/stock
+server:
+  port: 2002
+mybatis:
+  mapper-locations: mapper/*.xml
+seata:
+  application-id: seata-stock
+  enabled: true
+  #  tx-service-group: 'my_test_group'
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: a.aikele.top:8848
+      cluster: default
+      group: "SEATA_GROUP"
+#  config:
+#    type: nacos
+#    nacos:
+#      dataId: "seataServer.properties"
+#      server-addr: a.aikele.top:8848
+#      group: SEATA_GROUP
+logging:
+  level:
+    top.aikele.main: debug
