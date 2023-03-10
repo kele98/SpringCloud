@@ -44,3 +44,6 @@ seata:
 logging:
   level:
     top.aikele.main: debug
+feign:
+  hystrix:
+    enabled: true

@@ -12,7 +12,6 @@ class SeataOrderService2001ApplicationTests {
 	OrderMapper orderMapper;
 	@Test
 	void contextLoads() {
-
 		orderMapper.insert(new Order(1,1,1,1));
 	}
 
